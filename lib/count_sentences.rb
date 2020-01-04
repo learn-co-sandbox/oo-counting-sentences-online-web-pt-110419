@@ -3,27 +3,16 @@ require 'pry'
 class String
   
   def sentence?
-    word = {}
-    sentence?.each_with do |arr|
-      if arr.map do |period|
-        word.end_with?(".")
-        
-      end 
-      return true
-    end 
-      # word << arr.split(/\w+/)
-    end 
-   # self =~ end_with?(".")
-  # scan(/\w+/).count 
+    self.end_with?(".")
 
   end
 
   def question?
-     
+     self.end_with?("?")
   end
 
   def exclamation?
-      
+      self.end_with?("!")
   end
 
   def count_sentences
